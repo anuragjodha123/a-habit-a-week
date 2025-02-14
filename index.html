@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>A Habit A Week</title>
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=add,close" />
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="container">
+		<!-- <button type="button" class="add-button">
+				<span class="material-symbols-rounded">
+				add
+				</span>
+			</button>
+			<p>Click on '+' to add a habit</p> -->
+		<div class="icon">
+			<span class="material-symbols-rounded">close</span>
+		</div>
+		<div class="content">
+			<div class="left">
+				<div class="left-top">
+					<label for="habit-name" class="section-title">Habit Name</label>
+					<input type="text" id="habit-name" placeholder="Title"></input>
+				</div>
+				<div class="left-bottom">
+					<label for="habit-description" class="section-title">Description</label>
+					<textarea id="habit-description" row="4" cols="50"
+						placeholder="Add description about the habit here.">
+          </textarea>
+				</div>
+			</div>
+			<div class="right">
+				<div class="right-top">
+					<div class="habit-task section-title">Tasks</div>
+					<div class="task-list">
+						<div class="task-boxes">
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+						</div>
+						<div class="task-types">
+							<label for="habit-easy">Easy</label>
+							<label for="habit-medium">Medium</label>
+							<label for="habit-hard">Hard</label>
+							<label for="habit-epic">Epic</label>
+						</div>
+						<div class="task-inputs">
+							<input type="text" id="habit-easy" placeholder="Title"></input>
+							<input type="text" id="habit-medium" placeholder="Title"></input>
+							<input type="text" id="habit-hard" placeholder="Title"></input>
+							<input type="text" id="habit-epic" placeholder="Title"></input>
+						</div>
+					</div>
+				</div>
+				<div class="right-bottom">
+					<button type="button" class="habit-button">Add Habit</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	</div>
+
+</body>
+
+</html>

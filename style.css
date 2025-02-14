@@ -1,0 +1,152 @@
+html, body {
+    background-color: #EEFFF6;
+    font-family: "Roboto";
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Button Styles */
+
+.add-button{
+    background-color: #8EE1FF;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 1px 5px 8.3px rgba(0, 0, 0, 0.05);
+    height: 64px;
+    width: 64px;
+}
+
+.add-button:active {
+    box-shadow: none;
+}
+
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 600,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+p {
+    font-weight: 500;
+}
+
+/* Form Styles */
+
+.container {
+  display: flex;
+  justify-content: column;
+  align-items: flex-end;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 7vw;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5vmin;
+}
+
+.content .left {
+  display: flex;
+  flex-direction: column;
+}
+
+.content .right {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-top, .left-bottom, .right-top, .task-boxes,
+.task-types, .task-inputs{
+  display: flex;
+  flex-direction: column;
+}
+
+.task-boxes, .task-types, .task-inputs {
+  gap: 10px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.task-list {
+  display: flex;
+}
+
+.task-boxes div {
+  height: 20px;
+  width: 20px;
+  background-color: grey;
+  border-radius: 4px;
+}
+
+/* Add button styles */
+
+.habit-button {
+  width: 100%;
+}
+
+/* all the text settings */
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.task-types > label {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* inputs and text field looks */
+
+input {
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.7);
+  outline: none;
+}
+
+input:focus {
+  border-color: #000;
+}
+
+textarea {
+  padding: 5px;
+  border-radius: 5px;
+  border-color:rgba(0, 0, 0, 0.7);
+  resize: none;
+  outline: none;
+}
+
+textarea:focus {
+  border-color: rgba(0, 0, 0)
+}
+
+/* Habit button styles */
+
+.habit-button {
+    background-color: #8EE1FF;
+    border: none;
+    font-weight: 500;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 1px 5px 8.3px rgba(0, 0, 0, 0.05);
+}
+
+.section-title {
+  margin-bottom: 20px;
+}
