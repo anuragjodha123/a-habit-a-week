@@ -29,31 +29,39 @@
 				</div>
 				<div class="left-bottom">
 					<label for="habit-description" class="section-title">Description</label>
-					<textarea id="habit-description" row="4" cols="50"
-						placeholder="Add description about the habit here.">
-          </textarea>
+					<textarea id="habit-description" row="4" cols="50" placeholder="Add description about the habit here."></textarea>
 				</div>
 			</div>
 			<div class="right">
 				<div class="right-top">
 					<div class="habit-task section-title">Tasks</div>
 					<div class="task-list">
-						<div class="task-boxes">
-							<div></div>
-							<div></div>
-							<div></div>
-							<div></div>
-						</div>
-						<div class="task-types">
-							<label for="habit-easy">Easy</label>
-							<label for="habit-medium">Medium</label>
-							<label for="habit-hard">Hard</label>
-							<label for="habit-epic">Epic</label>
-						</div>
-						<div class="task-inputs">
+						<div class="task easy">
+              <div>
+                <div id="task-box-easy"></div>
+                <label for="habit-easy">Easy</label>
+              </div>
 							<input type="text" id="habit-easy" placeholder="Title"></input>
+						</div>
+            <div class="task medium">
+              <div>
+                <div id="task-box-medium"></div>
+                <label for="habit-medium">Medium</label>
+              </div>
 							<input type="text" id="habit-medium" placeholder="Title"></input>
+            </div>
+            <div class="task hard">
+              <div>
+                <div id="task-box-hard"></div>
+                <label for="habit-hard">Hard</label>
+              </div>
 							<input type="text" id="habit-hard" placeholder="Title"></input>
+            </div>
+            <div class="task epic">
+              <div>
+                <div id="task-box-epic"></div>
+                <label for="habit-epic">Epic</label>
+              </div>
 							<input type="text" id="habit-epic" placeholder="Title"></input>
 						</div>
 					</div>

@@ -1,3 +1,10 @@
+:root {
+  --easy-color: #1C1C1C;
+  --medium-color: #01461e;
+  --hard-color: #009d41;
+  --epic-color: #00ff44;
+}
+
 html, body {
     background-color: #EEFFF6;
     font-family: "Roboto";
@@ -7,6 +14,7 @@ html, body {
     align-items: center;
     justify-content: center;
 }
+
 .container {
     display: flex;
     justify-content: center;
@@ -56,7 +64,6 @@ p {
 .content {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
   gap: 5vmin;
 }
@@ -64,10 +71,12 @@ p {
 .content .left {
   display: flex;
   flex-direction: column;
+  gap: 5rem;
 }
 
 .content .right {
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
 }
 
@@ -77,21 +86,31 @@ p {
   flex-direction: column;
 }
 
-.task-boxes, .task-types, .task-inputs {
-  gap: 10px;
-  justify-content: space-between;
-  align-items: flex-start;
-}
 
 .task-list {
   display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 10rem;
 }
 
-.task-boxes div {
+.task-list .task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.task > div {
+  display: flex;
+  gap: 10px;
+}
+
+.task > div > div {
   height: 20px;
   width: 20px;
   background-color: grey;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
 /* Add button styles */
@@ -107,7 +126,7 @@ p {
   font-weight: 500;
 }
 
-.task-types > label {
+.task > div > label {
   font-size: 1.2rem;
   font-weight: 500;
 }
@@ -116,7 +135,7 @@ p {
 
 input {
   border: none;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.7);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.7);
   outline: none;
 }
 
@@ -130,6 +149,7 @@ textarea {
   border-color:rgba(0, 0, 0, 0.7);
   resize: none;
   outline: none;
+  height: 15vh;
 }
 
 textarea:focus {
@@ -150,3 +170,13 @@ textarea:focus {
 .section-title {
   margin-bottom: 20px;
 }
+
+
+#task-box-easy { background-color: var(--easy-color);}
+#task-box-medium { background-color: var(--medium-color);}
+#task-box-hard { background-color: var(--hard-color);}
+#task-box-epic { background-color: var(--epic-color);}
+
+.task.medium {opacity: 50%;}
+.task.hard { opacity: 40%;}
+.task.epic { opacity:30%;}
